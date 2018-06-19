@@ -1,5 +1,6 @@
 package com.amitgera.plugins.mdm;
 
+
 /**
  * Copyright 2018 Amit Gera
  * 
@@ -30,7 +31,7 @@ import org.codehaus.plexus.archiver.zip.ZipArchiver;
 import org.codehaus.plexus.util.FileUtils;
 
 /**
- * Mojo to create cba using dependecie and the composite bundle
+ * Mojo to create cba using dependecies and the composite bundle manifest file.
  * @author Amit Gera
  * 
  * @goal cba
@@ -170,9 +171,7 @@ public class MDMCBAMojo extends AbstractMojo {
 			File pomPropertiesFile = new File(dir, "pom.properties");
 			pomPropertiesUtil.createPomProperties(mavenSession, project, zipArchiver, null, pomPropertiesFile, true);
 			
-//			SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyyHHmmss");
 
-//			File cbaFile = new File(outputDirectory, finalName + "-" + sdf.format(new Date()) + ".cba");
 			File cbaFile = new File(outputDirectory, finalName + ".cba");
 			zipArchiver.setDestFile(cbaFile);
 
