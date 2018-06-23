@@ -1,4 +1,4 @@
-package com.amitgera.plugins.mdm;
+package com.amitgera.plugins.maven;
 
 
 /**
