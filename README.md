@@ -1,1 +1,3 @@
 # mdmcba-maven-plugin
+
+This plugin can be used to build and package CBA application created during MDM project creation in IBM MDM Workbench. The plugin does not replace the need to generate the Manifest.MF in CBA project. Keeping the correct and valid Manifest still lies with the developers. This plugin just aids creating the CBA artifact that can be deployed in WebSphere Application Server and attached to MDM EBA. All you need to do is to add your MDM projects maven artifacts as the dependency on this pom.xml and use custom packaging.
